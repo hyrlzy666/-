@@ -65,7 +65,7 @@ public class UserManager {
 					if(rs.getString(1).equals(userPwd)) {
 						rs.close();
 						pst.close();
-						BeanUser res = new BeanUsers();
+						BeanUser res = new BeanUser();
 						res.setUserName(userName);
 						return res;
 					}
